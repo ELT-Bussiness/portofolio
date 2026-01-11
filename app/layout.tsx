@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mbogneng-junior.vercel.app'), // Remplace par ton vrai domaine
+  metadataBase: new URL('https://portfolio.mbognengjunior.me'), // Remplace par ton vrai domaine
   title: {
     default: "MBOGNENG TETSIEBOU JUNIOR - Software Engineer & AI Enthusiast",
     template: "%s | MBOGNENG TETSIEBOU JUNIOR"
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     alternateLocale: ["en_US", "de_DE", "es_ES", "zh_CN"],
-    url: "https://mbogneng-junior.vercel.app",
+    url: "https://portfolio.mbognengjunior.me",
     siteName: "MBOGNENG TETSIEBOU JUNIOR Portfolio",
     title: "MBOGNENG TETSIEBOU JUNIOR - Software Engineer & AI Enthusiast",
     description: "Portfolio de MBOGNENG TETSIEBOU JUNIOR - Ingénieur Logiciel & Passionné de Deep Learning",
