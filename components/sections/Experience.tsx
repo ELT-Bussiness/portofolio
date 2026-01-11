@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { Briefcase, MapPin, Calendar } from 'lucide-react'
 
 export function Experience() {
-  const { t } = useLanguage()
+  const { t, tArray } = useLanguage()
   const { experience } = portfolioData
 
   return (
@@ -45,7 +45,7 @@ export function Experience() {
                 </div>
 
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                  {t(exp.description).map((desc, i) => (
+                  {tArray(exp.description).map((desc, i) => (
                     <li key={i}>{desc}</li>
                   ))}
                 </ul>
