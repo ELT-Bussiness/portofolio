@@ -26,21 +26,21 @@ export function Projects() {
 
       <div className="relative z-10 container mx-auto max-w-6xl">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <div className="inline-block border-4 border-gray-900 dark:border-white px-12 py-4 bg-gray-100 dark:bg-gray-950">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-wider text-gray-900 dark:text-white">
+        <div className="text-center mb-10 md:mb-16">
+          <div className="inline-block border-2 md:border-4 border-gray-900 dark:border-white px-6 sm:px-8 md:px-12 py-3 md:py-4 bg-gray-100 dark:bg-gray-950">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-gray-900 dark:text-white">
               {t({ en: 'PORTFOLIO', fr: 'PORTFOLIO', de: 'PORTFOLIO', es: 'PORTAFOLIO', zh: '作品集' })}
             </h2>
           </div>
         </div>
 
         {/* Filter buttons */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
+        <div className="flex justify-center gap-2 sm:gap-4 mb-8 md:mb-12 flex-wrap px-2">
           {categories.map((category) => (
             <button
               key={category.key}
               onClick={() => setFilter(category.key)}
-              className={`px-6 py-2 font-medium tracking-wider transition-all duration-300 ${
+              className={`px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 text-sm sm:text-base font-medium tracking-wider transition-all duration-300 ${
                 filter === category.key
                   ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
                   : 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -52,7 +52,7 @@ export function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 md:mb-12">
           {projects.slice(0, 6).map((project, index) => (
             <div
               key={index}

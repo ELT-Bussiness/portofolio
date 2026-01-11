@@ -17,19 +17,19 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+    <section id="contact" className="py-12 md:py-20 px-4 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <div className="inline-block border-4 border-gray-900 dark:border-white px-12 py-4">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-wider text-gray-900 dark:text-white">
+        <div className="text-center mb-10 md:mb-16">
+          <div className="inline-block border-2 md:border-4 border-gray-900 dark:border-white px-6 sm:px-8 md:px-12 py-3 md:py-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-gray-900 dark:text-white">
               {t({ en: 'CONTACT', fr: 'CONTACT', de: 'KONTAKT', es: 'CONTACTO', zh: '联系方式' })}
             </h2>
           </div>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <p className="text-center text-lg text-gray-700 dark:text-gray-300 mb-12">
+          <p className="text-center text-base md:text-lg text-gray-700 dark:text-gray-300 mb-8 md:mb-12 px-4">
             {t({
               en: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
               fr: "Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire partie de votre vision.",

@@ -27,36 +27,36 @@ export function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+    <section id="skills" className="py-12 md:py-20 px-4 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <div className="inline-block border-4 border-gray-900 dark:border-white px-12 py-4">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-wider text-gray-900 dark:text-white">
+        <div className="text-center mb-10 md:mb-16">
+          <div className="inline-block border-2 md:border-4 border-gray-900 dark:border-white px-6 sm:px-8 md:px-12 py-3 md:py-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-gray-900 dark:text-white">
               {t({ en: 'SKILLS', fr: 'COMPÉTENCES', de: 'FÄHIGKEITEN', es: 'HABILIDADES', zh: '技能' })}
             </h2>
           </div>
         </div>
 
         {/* USING NOW Section */}
-        <div className="mb-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white tracking-wider">
+        <div className="mb-8 md:mb-12">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-gray-900 dark:text-white tracking-wider">
             {t({ en: 'USING NOW:', fr: 'UTILISE ACTUELLEMENT:', de: 'VERWENDE JETZT:', es: 'USANDO AHORA:', zh: '目前使用:' })}
           </h3>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
             {techStack.map((tech, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center space-y-3 p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all hover:-translate-y-2 duration-300"
+                className="flex flex-col items-center justify-center space-y-2 md:space-y-3 p-2 sm:p-3 md:p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all hover:-translate-y-2 duration-300"
               >
                 <div 
-                  className="w-16 h-16 rounded-lg flex items-center justify-center text-2xl font-bold text-white"
+                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-lg flex items-center justify-center text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white"
                   style={{ backgroundColor: tech.color }}
                 >
                   {tech.name.substring(0, 2).toUpperCase()}
                 </div>
-                <span className="text-sm font-medium text-gray-900 dark:text-white text-center">
+                <span className="text-xs sm:text-sm font-medium text-gray-900 dark:text-white text-center">
                   {tech.name}
                 </span>
               </div>

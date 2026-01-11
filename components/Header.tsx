@@ -47,8 +47,10 @@ export function Header() {
           </div>
 
           {/* Right side controls */}
-          <div className="flex items-center gap-4">
-            <LanguageToggle />
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className="hidden xs:block sm:block">
+              <LanguageToggle />
+            </div>
             <ThemeToggle />
             
             {/* Mobile menu button */}
@@ -64,6 +66,10 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-2">
+            {/* Language toggle for very small screens */}
+            <div className="px-4 py-2 sm:hidden">
+              <LanguageToggle />
+            </div>
             {navItems.map((item) => (
               <a
                 key={item.href}
