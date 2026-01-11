@@ -10,14 +10,70 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MBOGNENG TETSIEBOU JUNIOR - Portfolio",
-  description: "Software Engineer & Deep Learning Enthusiast - Portfolio of MBOGNENG TETSIEBOU JUNIOR, 5th-year Computer Engineering student at ENSPY",
-  keywords: ["Software Engineer", "Deep Learning", "AI", "Web Development", "Mobile Development", "Portfolio"],
-  authors: [{ name: "MBOGNENG TETSIEBOU JUNIOR" }],
+  metadataBase: new URL('https://mbogneng-junior.vercel.app'), // Remplace par ton vrai domaine
+  title: {
+    default: "MBOGNENG TETSIEBOU JUNIOR - Software Engineer & AI Enthusiast",
+    template: "%s | MBOGNENG TETSIEBOU JUNIOR"
+  },
+  description: "Portfolio de MBOGNENG TETSIEBOU JUNIOR - Ingénieur Logiciel & Passionné de Deep Learning. Étudiant en 5ème année d'Ingénierie Informatique à l'ENSPY, Yaoundé, Cameroun. Spécialisé en développement web, mobile et intelligence artificielle.",
+  keywords: [
+    "MBOGNENG TETSIEBOU JUNIOR",
+    "Software Engineer",
+    "Deep Learning",
+    "AI",
+    "Web Development",
+    "Mobile Development",
+    "Portfolio",
+    "ENSPY",
+    "Cameroon",
+    "Python",
+    "Java",
+    "Spring Boot",
+    "React Native",
+    "Next.js",
+    "Machine Learning",
+    "Computer Vision"
+  ],
+  authors: [{ name: "MBOGNENG TETSIEBOU JUNIOR", url: "https://github.com/Mbogneng-Junior" }],
+  creator: "MBOGNENG TETSIEBOU JUNIOR",
+  publisher: "MBOGNENG TETSIEBOU JUNIOR",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: "MBOGNENG TETSIEBOU JUNIOR - Portfolio",
-    description: "Software Engineer & Deep Learning Enthusiast",
     type: "website",
+    locale: "fr_FR",
+    alternateLocale: ["en_US", "de_DE", "es_ES", "zh_CN"],
+    url: "https://mbogneng-junior.vercel.app",
+    siteName: "MBOGNENG TETSIEBOU JUNIOR Portfolio",
+    title: "MBOGNENG TETSIEBOU JUNIOR - Software Engineer & AI Enthusiast",
+    description: "Portfolio de MBOGNENG TETSIEBOU JUNIOR - Ingénieur Logiciel & Passionné de Deep Learning",
+    images: [
+      {
+        url: "/profil.png",
+        width: 800,
+        height: 600,
+        alt: "MBOGNENG TETSIEBOU JUNIOR",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MBOGNENG TETSIEBOU JUNIOR - Software Engineer & AI Enthusiast",
+    description: "Portfolio de MBOGNENG TETSIEBOU JUNIOR - Ingénieur Logiciel & Passionné de Deep Learning",
+    images: ["/profil.png"],
+  },
+  verification: {
+    // Ajoute ces codes après avoir configuré Google Search Console
+    // google: "ton-code-verification-google",
   },
 };
 
